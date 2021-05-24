@@ -9,18 +9,19 @@
 echo "** 00 setup environment test_mesa **"
 date
 source ~/spack/share/spack/setup-env.sh
+spack env remove -y test_mesa
 spack env create test_mesa
 spack env activate test_mesa
 spack env status
 export PATH=/lib64:/home/apps/oss/PyTorch-1.7.0/bin:$PATH
 export LD_LIBRARY_PATH=/home/apps/oss/PyTorch-1.7.0/lib:$LD_LIBRARY_PATH
-cd ~/local/aarch64/virtualenv/
-python3 -m virtualenv -p python3 test_mesa --system-site-packages
-source ~/local/aarch64/virtualenv/test/bin/activate
+#cd ~/local/aarch64/virtualenv/
+#python3 -m virtualenv -p python3 test_mesa --system-site-packages
+source ~/local/aarch64/virtualenv/test_mesa/bin/activate
 date
 
 echo "** 01 mesa start **"
-spack install mesa
+spack install mesa ldlibs="-ltinfo"
 date
 
 
