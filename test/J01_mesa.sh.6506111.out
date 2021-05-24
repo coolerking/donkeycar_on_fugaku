@@ -1,0 +1,84 @@
+** 00 setup environment test_mesa **
+Mon May 24 09:28:08 JST 2021
+==> Updating view at /vol0004/ra010001/a04335/spack/var/spack/environments/test_mesa/.spack-env/view
+==> Created environment 'test_mesa' in /vol0004/ra010001/a04335/spack/var/spack/environments/test_mesa
+==> You can activate this environment with:
+==>   spack env activate test_mesa
+==> In environment test_mesa
+created virtual environment CPython3.8.2.final.0-64 in 9203ms
+  creator CPython3Posix(dest=/vol0004/ra010001/a04335/local/aarch64/virtualenv/test_mesa, clear=False, no_vcs_ignore=False, global=True)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/vol0004/ra010001/a04335/.local/share/virtualenv)
+    added seed packages: pip==21.1.1, setuptools==56.0.0, wheel==0.36.2
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+Mon May 24 09:28:32 JST 2021
+** 01 mesa start **
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libiconv-1.16-sfms5xvgl5a72c2ntkyhpxhk2oaim4cv
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/pkgconf-1.7.3-tkl6xodj7b7z63l7vmdakcknxo5ryend
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xz-5.2.5-f6vwx4o34y5p7qkwaz2fylb4fqqagqnf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/zlib-1.2.11-4cjuefhcsr5mnrfuxk7umqxhm5wwmtqf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/berkeley-db-18.1.40-7dknf2wwpxx46qs4my6ahjivwozjzko3
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libsigsegv-2.12-2qhyocuw5rawo6tpqegh2xdaf623424q
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/util-macros-1.19.1-52ua24mmbfs6jpjlju3jsqrizkhd233d
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libpthread-stubs-0.4-y25xjpmb6rpunicqtvusre55stmzojl2
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libbsd-0.10.0-vnjsetjc5ghqz6pfniuewpxsf2oqnj4s
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xcb-proto-1.13-xktohz3j62k2qj2utebj2mawjr7imoos
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libuuid-1.0.3-krzfxjqc4dahrtv7slx7hu6h3zabtcrk
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libffi-3.3-wkfvk7zhqxzhetzgpglok3qfukyhxdqf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/pcre-8.44-qnh6uv7s4qrfa4qqjmqxukhlkwyy7cch
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/tar-1.32-3f3dlon3genpuoykaupsz5saz65qbgai
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/diffutils-3.7-k6nqp2nyboueow34nrypiyaqhhevc4e2
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/ncurses-6.2-guk7ofvdpkdnrrhrannhuaji565i7buz
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxml2-2.9.10-bquwdhlvuibszxap4su7r57vqbp6lioi
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/m4-1.4.18-tajkcerbik3rbijuxty6rgp6dxk2qlvc
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/kbproto-1.0.7-ecj75bgvbtnl5ryyrlybpsvcd3ps6zqg
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xproto-7.0.31-xxef4csa364g5fibtdqlpvd2gugrc4fr
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/glproto-1.4.17-v7xjhczvkf2o4ct4qwigjavebmtimwy6
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/inputproto-2.3.2-knsc35pgehvivj4qrutqhrwhqq3g3y4h
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xtrans-1.3.5-v4w2um4opr2f6lb77nquex6tnftxt6yx
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/renderproto-0.11.1-rzc4y6olttvxsj5ff7tslgqkbhokjvfd
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xextproto-7.3.0-cgojzvrhgfxnwjzv2w425allznzjuo3r
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/randrproto-1.5.0-ni4yyzajgg677dngyndvd5ugmibogbcw
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/expat-2.2.10-3mru4ydwmfd7txkj2wsvmgwokpxust6o
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/bzip2-1.0.8-ggrda2yfhg7utneqiqm2v7ztjibmcv4e
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libedit-3.1-20191231-tjmzsc5ltbn2fksb7ru6ow6sjeo5git7
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/readline-8.0-n6urhogkjprjmdc7ivkh6bm7jb5xoi46
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libtool-2.4.6-4iab5ptr3vmwfswxmz47irl7lgf35umt
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxau-1.0.8-fcuwcohueq5s74ljmpakfbefmpexbbon
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxdmcp-1.1.2-x3fpvgpxvdd6cbrr3yblkjtmca3tyje3
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libice-1.0.9-zzrr47xz2hor6yywfgfef46ockldqnsa
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/gettext-0.21-3k2kjebzot6eexdmvhfasti77ovee3wx
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/sqlite-3.33.0-n2w5d23hftxva3lee53qdofunbphm6cq
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/gdbm-1.18.1-f5oceq4pkvekl6kaiplma2j75oiywr6q
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libpciaccess-0.16-i45332a2pl6ba3h7kgd7p5p6sq276luo
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxcb-1.13-c62a2hxx4wxyyosg7cl7xnwopikwuxqd
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libsm-1.2.3-cz3vy5vfxgfm7otfi26if6qnv6d7zpky
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/binutils-2.35.1-4nakr5tqkfloktidm6vseui2x2lbfrrk
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/perl-5.32.0-jgsy25jtj7pd6apaolujypfwk2i36nl6
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/hwloc-2.2.0-dr3ifrqibpspfxrbrsmb46xoqrjt56vf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/autoconf-2.69-yr27mi26woroefrdiqg3reem2jhpnv2n
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libx11-1.6.7-qvjrlinrjj7iskdvztgbakg5pl2j7mcj
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/perl-data-dumper-2.173-c267polzdebzn6cj2lr7kfqvlnmkb775
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/help2man-1.47.11-k5lvqqxcjv65pftjxdg6ou5rldnhx7pf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/texinfo-6.5-cvvgu5b274lwv66dfbhjcbovwzdfs4dn
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/openssl-1.1.1h-rp6xpos4wjwgk5xo5cahjlfdmxxf2svf
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/automake-1.16.2-xgowaudv2g2jektr7e3j4fdatnlz52nl
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxext-1.3.3-lrhkgnu4qtz33fc6rtx4xztw5jt3ltrs
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxt-1.1.5-m2d5yhm4rkstcaub6rwm6ju5yaotvtld
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxrender-0.9.10-yifvweslezj3swn4q362imw7ranl6iky
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/bison-3.6.4-gtxwytykfqtvzlfwcufscadpd7di7mdh
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/cmake-3.18.4-bae6gkhpw2xbbcvy7vxsrwou26zdyqi2
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/python-3.8.6-7ny3ngmgh7rnz35w2ub6h32mqymdff4e
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/swig-4.0.2-mymdajdh6m4vwpvioive6hztuajrjftp
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/findutils-4.6.0-zhdg6qqyhnn4t3lnxwbhaoikihk4xsdt
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/libxrandr-1.5.0-xm37b5chara6gydu3krtbs2wtdgydzdx
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/ninja-1.10.1-u7iesowzm3rc3qubafrbp6bywtjl6wxc
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/py-setuptools-50.3.2-vyqjfixewyeeracq2nxzim4l2ar4lult
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/flex-2.6.4-xlthng7n7inqamzc4knwxpnbhzmnj4k5
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/xrandr-1.5.0-qapxzvpunyjz4yvc7jyyi6j7agrtg5bd
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/py-markupsafe-1.1.1-fqcpe7bvgzlmjfroav5ubqeuntaa5gsp
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/meson-0.56.0-7zj4isobg4bphvmyfjqqdk2bit35eksy
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/z3-4.8.7-lk7b575spg6cddu2omwwr7cgo6ct32rd
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/py-mako-1.0.4-g7cohqjncv6qomyugslcbyom4puanpbq
+[+] /vol0004/apps/oss/spack-v0.16/opt/spack/linux-rhel8-a64fx/fj-4.3.1/llvm-11.0.1-vyzqx6zwlpxjs6eu7hu3bsvsdsledoiu
+==> Installing mesa-20.2.1-eqqa3rahwqwybbz5x6i6jueg57jj6eke
+==> No binary for mesa-20.2.1-eqqa3rahwqwybbz5x6i6jueg57jj6eke found: installing from source
