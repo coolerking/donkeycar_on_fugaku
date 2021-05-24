@@ -11,7 +11,7 @@ date
 #cd ~/local/aarch64/virtualenv/
 #rm -rf ./test_mesa
 source ~/spack/share/spack/setup-env.sh
-#spack env remove -y test_gl
+spack env remove -y test_gl
 spack env create test_gl
 spack env activate test_gl
 spack env status
