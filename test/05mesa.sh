@@ -25,7 +25,7 @@ export PYTHON3_EXECUTABLE=$PYTHON_DEFAULT_EXECUTABLE
 date
 
 echo "** 01 opengl start **"
-spack install opengl@4.5.0 ldlibs="-ltinfo"
+spack install opengl@4.5 ldlibs="-ltinfo"
 date
 
 
