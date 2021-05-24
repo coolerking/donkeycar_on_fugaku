@@ -8,4 +8,6 @@ Run [donkeycar](https://www.donkeycar.com) training app on [Fugaku](https://www.
 
 > For details, please show fugaku manual on the portal site.
 
-* 
+## License
+
+This repos contents are under [MIT License](./LICENSE).
