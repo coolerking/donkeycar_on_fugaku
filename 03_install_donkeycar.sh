@@ -59,7 +59,7 @@ date
 cd ~/projects/ratf
 rm -rf donkeycar
 git clone https://github.com/autorope/donkeycar.git
-cd ./projects/ratf/donkeycar
+cd ~/projects/ratf/donkeycar
 git checkout master
 pwd
 find . -name setup.py -print
