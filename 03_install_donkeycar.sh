@@ -59,7 +59,11 @@ date
 cd ~/projects/ratf
 rm -rf donkeycar
 echo "before git clone" 1>&2
-git clone -b releases_4_2 https://github.com/autorope/donkeycar.git
+spack env deactivate
+spack env status
+git clone -b release_4_2 https://github.com/autorope/donkeycar.git donkeycar
+spack env activate $ENV_NAME
+spack env status
 echo "after git clone" 1>&2
 cd ~/projects/ratf/donkeycar
 #git checkout master
