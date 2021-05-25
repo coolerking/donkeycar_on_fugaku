@@ -43,8 +43,7 @@ pip list|grep $PACKAGE_NAME
 
 echo "** 2104 pip install **"
 date
-cd ~/projects
-cd donkeycar
+cd ~/projects/ratf/donkeycar
 git pull
 pip install -e .[pc] --user
 date
