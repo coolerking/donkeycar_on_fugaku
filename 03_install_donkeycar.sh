@@ -26,13 +26,10 @@ export ENV_NAME="donkeycar"
 # Machine Learning Framework
 #export ML_LIB_NAME="PyTorch-1.7.0"
 export ML_LIB_NAME="TensorFlow-2.2.0"
-# donkeycar branch name
-export BRANCH_NAME="release_4_2"
 
 echo "** 0300 environments **"
 echo "ml framework: $ML_LIB_NAME"
 echo "env name:     $ENV_NAME"
-echo "branch name:  $BRANCH_NAME"
 
 
 echo "** 0301 set system environments **"
@@ -61,8 +58,9 @@ echo "** 0303 get and pip install donkeycar **"
 date
 cd ~/projects/ratf
 rm -rf donkeycar
-git clone -b $BRANCH_NAME https://github.com/autorope/donkeycar.git
+git clone https://github.com/autorope/donkeycar.git
 cd ./projects/ratf/donkeycar
+git checkout master
 pip install -e .[pc] --user
 date
 pip list | grep donkeycar
