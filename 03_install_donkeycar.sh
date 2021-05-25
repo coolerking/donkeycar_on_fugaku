@@ -34,8 +34,8 @@ echo "env name:     $ENV_NAME"
 
 echo "** 0301 set system environments **"
 # for python3 with ML_LIB
-export PATH=/lib64:/home/apps/oss/$ML_LIB_NAME/bin:$PATH
-export LD_LIBRARY_PATH=/home/apps/oss/$ML_LIB_NAME/lib:$LD_LIBRARY_PATH
+export PATH=/home/apps/oss/$ML_LIB_NAME/bin:$PATH
+export LD_LIBRARY_PATH=/lib64:/home/apps/oss/$ML_LIB_NAME/lib:$LD_LIBRARY_PATH
 # for cmake
 export PYTHON_DEFAULT_EXECUTABLE=/home/apps/oss/$ML_LIB_NAME/bin/python3
 export PYTHON3_EXECUTABLE=$PYTHON_DEFAULT_EXECUTABLE
