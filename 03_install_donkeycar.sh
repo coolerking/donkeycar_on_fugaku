@@ -61,15 +61,17 @@ rm -rf donkeycar
 git clone https://github.com/autorope/donkeycar.git
 cd ./projects/ratf/donkeycar
 git checkout master
+pwd
+find . -name setup.py -print
 pip install -e .[pc] --user
 date
 pip list | grep donkeycar
 
 echo "** 0304 eval (create donkeycar app) **"
 cd ~/
+rm -rf ~/mycar
 donkey createcar --path ~/mycar
-cd ~/mycar
-ls -la
+ls -la ~/mycar
 
 spack env deactivate
 echo "**** 03_install_donkeycar.sh end ****"
