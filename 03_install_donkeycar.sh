@@ -59,10 +59,10 @@ pip list|grep donkeycar
 
 echo "** 0303 get and pip install donkeycar **"
 date
-cd ~/projects
-rm -rf ./donkeycar
-git clone -b $BRANCH_NAME https://github.com/autorope/donkeycar.git ./donkeycar
-cd ./donkeycar
+cd ~/projects/ratf
+rm -rf donkeycar
+git clone -b $BRANCH_NAME https://github.com/autorope/donkeycar.git
+cd ./projects/ratf/donkeycar
 pip install -e .[pc] --user
 date
 pip list | grep donkeycar
