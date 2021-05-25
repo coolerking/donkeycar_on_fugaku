@@ -58,9 +58,11 @@ echo "** 0303 get and pip install donkeycar **"
 date
 cd ~/projects/ratf
 rm -rf donkeycar
-git clone https://github.com/autorope/donkeycar.git
+echo "before git clone" 1>&2
+git clone -b releases_4_2 https://github.com/autorope/donkeycar.git
+echo "after git clone" 1>&2
 cd ~/projects/ratf/donkeycar
-git checkout master
+#git checkout master
 pwd
 find . -name setup.py -print
 pip install -e .[pc] --user
