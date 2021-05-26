@@ -23,8 +23,8 @@ date
 export ENV_NAME="donkeycar"
 #export ENV_NAME="env"
 # Machine Learning Framework
-#export ML_LIB_NAME="PyTorch-1.7.0"
-export ML_LIB_NAME="TensorFlow-2.2.0"
+export ML_LIB_NAME="PyTorch-1.7.0"
+#export ML_LIB_NAME="TensorFlow-2.2.0"
 
 echo "** 0200 environments **"
 echo "ml framework: $ML_LIB_NAME"
