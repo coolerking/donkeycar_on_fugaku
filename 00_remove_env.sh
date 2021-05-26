@@ -15,6 +15,7 @@
 
 
 
+
 echo "**** 00_remove_env.sh start ****"
 date
 # spack/virtual env name
